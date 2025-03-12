@@ -12,7 +12,6 @@ public class PageTimeOut {
 	public static void main(String[] args) {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		//
 		Instant StartTime = Instant.now();
